@@ -1,16 +1,158 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>contact</title>
-  </head>
-  <body>
-    <%- include('./layout/header'); -%>
-    <h1>我是contact</h1>
-    <%- include('./layout/footer'); -%>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glasses Shop</title>
+    <link rel="stylesheet" href="../assets/css/reset.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <!-- google icon -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+   <!-- AOS -->
+   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
-    <script type="module" src="../main.js"></script>
-  </body>
+</head>
+<body>
+
+    <!-- header -->
+    <%- include('./layout/header'); -%>
+
+    <!-- contact -->
+    <div class="container wrap">
+        <h3 class="pageTitle pageTitle--contact" data-aos="fade-up">門市據點</h3>
+        <form class="selectbar">
+            <label for="area">選擇地區</label>
+            <select id="area" name="area">
+                <option value="台北市">台北市</option>
+                <option value="台中市">台中市</option>
+                <option value="高雄市">高雄市</option>
+            </select>
+        </form>
+        <!-- contact list -->
+        <div class="contactList">
+
+            <div class="contactList__item" data-aos="fade-up">
+                <img src="../assets/images/store-1.png" alt="glasses">
+                <div class="contactList__item__txt">
+                    <p class="contactItem__title">台北中山旗艦店</p>
+                    <div class="contactInfo">
+                        <div class="contactInfo__item">
+                            <span class="material-symbols-outlined">call</span>
+                            <p>電話：(02)000-1234</p>
+                        </div>
+                        <div class="contactInfo__item">
+                            <span class="material-symbols-outlined">schedule</span>
+                            <p>營業時間：10:00-21:00</p>
+                        </div>
+                        <div class="contactInfo__item">
+                            <span class="material-symbols-outlined">location_on</span>
+                            <p>地址：台北市中山區南京東路 25 巷 2-1 號</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="btnStyle--detial"><a href="contact-detial.html">詳細資訊</a></div>
+            </div>
+            <div class="contactList__item" data-aos="fade-up">
+                <img src="../assets/images/store-2.png" alt="glasses">
+                <div class="contactList__item__txt">
+                    <p class="contactItem__title">台北綠園店</p>
+                    <div class="contactInfo">
+                        <div class="contactInfo__item">
+                            <span class="material-symbols-outlined">call</span>
+                            <p>電話：(02)000-2345</p>
+                        </div>
+                        <div class="contactInfo__item">
+                            <span class="material-symbols-outlined">schedule</span>
+                            <p>營業時間：10:00-21:00</p>
+                        </div>
+                        <div class="contactInfo__item">
+                            <span class="material-symbols-outlined">location_on</span>
+                            <p>地址：台北市中正區復興南路 132-1 號</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="btnStyle--detial"><a href="">詳細資訊</a></div>
+            </div>
+            <div class="contactList__item" data-aos="fade-up">
+                <img src="../assets/images/store-3.png" alt="glasses">
+                <div class="contactList__item__txt">
+                    <p class="contactItem__title">台中清水旗艦店</p>
+                    <div class="contactInfo">
+                        <div class="contactInfo__item">
+                            <span class="material-symbols-outlined">call</span>
+                            <p>電話：(02)000-1234</p>
+                        </div>
+                        <div class="contactInfo__item">
+                            <span class="material-symbols-outlined">schedule</span>
+                            <p>營業時間：10:00-21:00</p>
+                        </div>
+                        <div class="contactInfo__item">
+                            <span class="material-symbols-outlined">location_on</span>
+                            <p>地址：台中市清水區經南一路 23 號 8 樓</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="btnStyle--detial"><a href="">詳細資訊</a></div>
+            </div>
+            <div class="contactList__item" data-aos="fade-up">
+                <img src="../assets/images/store-4.png" alt="glasses">
+                <div class="contactList__item__txt">
+                    <p class="contactItem__title">高雄中正形象店</p>
+                    <div class="contactInfo">
+                        <div class="contactInfo__item">
+                            <span class="material-symbols-outlined">call</span>
+                            <p>電話：(07)000-2345</p>
+                        </div>
+                        <div class="contactInfo__item">
+                            <span class="material-symbols-outlined">schedule</span>
+                            <p>營業時間：10:00-21:00</p>
+                        </div>
+                        <div class="contactInfo__item">
+                            <span class="material-symbols-outlined">location_on</span>
+                            <p>地址：高雄市苓雅區中正路 38 號 12 樓</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="btnStyle--detial"><a href="">詳細資訊</a></div>
+            </div>
+            <div class="contactList__item" data-aos="fade-up">
+                <img src="../assets/images/store-5.png" alt="glasses">
+                <div class="contactList__item__txt">
+                    <p class="contactItem__title">高雄夢時代店</p>
+                    <div class="contactInfo">
+                        <div class="contactInfo__item">
+                            <span class="material-symbols-outlined">call</span>
+                            <p>電話：(07)000-1234</p>
+                        </div>
+                        <div class="contactInfo__item">
+                            <span class="material-symbols-outlined">schedule</span>
+                            <p>營業時間：10:00-21:00</p>
+                        </div>
+                        <div class="contactInfo__item">
+                            <span class="material-symbols-outlined">location_on</span>
+                            <p>地址：高雄市前鎮區中華一路 63 號 6樓</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="btnStyle--detial"><a href="">詳細資訊</a></div>
+            </div>
+
+
+        </div>
+    </div>
+
+
+
+    <!-- footer -->
+    <%- include('./layout/footer'); -%>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
+    <!-- <script type="module" src="../main.js"></script> -->
+</body>
 </html>
